@@ -25,7 +25,6 @@ import {
   Search,
   Send,
   ShieldCheck,
-  Sparkles,
   UserCheck,
   WalletCards,
   Wrench,
@@ -575,14 +574,8 @@ function App() {
   return (
     <div className="app-shell">
       <aside className="sidebar">
-        <button className="brand" onClick={() => setActiveView("command")} title="RentPilot command center">
-          <span className="brand-mark">
-            <Sparkles size={19} />
-          </span>
-          <span>
-            <strong>RentPilot</strong>
-            <small>Rental OS</small>
-          </span>
+        <button className="brand" onClick={() => setActiveView("command")} title="RentalPilot command center">
+          <img className="brand-logo" src="/test.png" alt="RentalPilot" />
         </button>
         <nav className="nav-list">
           {navItems.map((item) => {
